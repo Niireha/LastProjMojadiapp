@@ -9,6 +9,7 @@ from PIL import Image, ImageOps
 def load_model():
     model = tf.keras.models.load_model("cnnMelanomaX.hdf5")
     return model
+    
 with st.spinner("loading model"):
     model = load_model()
     
